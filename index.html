@@ -1,523 +1,149 @@
-@font-face {
-    font-family: roboto;
-    src: url(fonts/roboto/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: rubik;
-    src: url(fonts/rubik/Rubik-VariableFont_wght.ttf);
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-.top_header{
-    display: flex;
-    background-color: rgb(255, 0, 55);
-    justify-content: center;
-    padding: 10px 0;
-}
-.top_header img{
-    width: 24px;
-    margin-right: 5px ;
-}
-.top_header a{
-    font-family: roboto;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#call{
-    width: 24px;
-}
-
-
-header{
-    font-family: roboto;
-    background-color: white;
-    border-bottom: 1px solid rgb(236, 219, 219);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-}
-#logo{
-    margin-top: 3px;
-    height: 60px;
-}
-header a{
-    color: black;
-}
-
-.section_1{
-    font-family: roboto;
-    padding: 40px;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.783), rgba(0, 0, 0, 0.747)),url(images/cover.jpg);
-    background-size: cover;
-}
-
-
-.btn-call{
-    background-color:rgb(255, 0, 55);
-    border: 1px solid rgb(255, 0, 55);
-    color: white;
-    padding: 10px 15px;
-    display: inline-block;
-    letter-spacing: 2px;
-    font-size: 1.3rem;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.btn-call:hover{
-    background: none;
-    color: white;
-    border: 1px solid white;
-    
-
-}
-
-.home_link{
-    font-weight: 800;
-}
-
-
-.section_1 h1{
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-
-
-.section_2{
-    font-family: roboto;
-    text-align: center;
-    margin: 30px 0 20px 0;
-    padding: 10px 0;
-}
-.section_2 h2{
-    font-size: 2rem;
-}
-.section_2 .line_bottom{
-    margin-top: 10px;
-    display: inline-block;
-    border-style: solid;
-    border-width: 15px;
-    border-color: rgb(255, 0, 55) transparent transparent transparent;
-}
-
-/* .section_2 .btn-contact{
-    display: inline-block;
-    background-color: rgb(255, 0, 55);
-    margin: 10px 0;
-    padding: 10px;
-    color: white;
-
-} */
-
-.section_2 .all_services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(237, 232, 233);
-    margin-top: 5px;
-    margin-bottom: 100px;
-}
-
-.section_2 .all_services .service{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-around;
-    width: 200px;
-    margin: 30px;
-    background-color: white;
-    padding: 20px;
-    width: 250px;
-    min-height: 100px;
-    border-radius: 10px;
-    color: rgb(26, 23, 25);
-    font-family: roboto;
-    font-weight: lighter;
-}
-.section_2 .all_services .service img{
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-.section_2 .all_services .service:last-child img{
-    width: 250px;
-}
-
-
-.section_3{
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
-    margin: 20px 50px;
-    justify-content: center;
-    min-height: 340px;
-    font-family: roboto;
-    align-items: center;
-}
-
-.section_3 .part_2{
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.section_3 .part_2 h2{
-    color: rgb(90, 88, 88);
-    font-weight: bolder;
-    font-size: 2em;
-
-}
-.section_3 .part_2 a{
-    display: block;
-    width: 160px;
-    background-color: rgb(255, 0, 55);
-    padding: 10px;
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    /* font-weight: 700; */
-
-}
-
-.section_3 .part_2 p{
-    color: rgb(108, 101, 101);
-    margin-top: 20px;
-    font-size: 1.1em;
-    font-weight: lighter;
-    letter-spacing: 1px;
-}
-
-
-.section_4 .title_section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.section_4 .title_section img{
-    margin-right: 5px;
-}
-.section_4 {
-    /* background-color: rgb(4, 5, 33); */
-    font-family: roboto;
-    padding: 40px 20px 80px 20px;
-    position: relative;
-    margin: 0 0 50px;
-    background: linear-gradient(rgba(4, 5, 33, 0.961), rgba(4, 5, 33, 0.45)) ,url(images/map_cover.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.section_4 .line_bottom{
-    border: none;
-    border-bottom: solid 4px rgb(255, 0, 55);
-    width: 40px;
-}
-
-.section_4 .zone{
-    background-color: white;
-    box-shadow: 0px 1px 100px 1px black;
-    border-radius: 10px;
-    margin: 30px 40px 40px 40px;
-    padding: 20px;
-    position: absolute;
-    bottom: -50%;
-    right: 0;
-    left: 0;
-}
-.section_4 .title_section img{ 
-    width: 64px;
-}
-
-.section_4 .zone img{
-    width: 20px;
-    margin-right: 3px;
-}
-
-.section_4 .zone ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.section_4 .zone ul li span{
-    text-align: start;
-    font-family: roboto;
-    font-weight: lighter;
-}
-.section_4 .zone ul li {
-    margin: 5px 0;
-}
-
-
-.contact_sticky{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    height: 60px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
-
-.contact_sticky a{
-    background-color: rgb(255, 0, 55);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.contact_sticky a img{
-    width: 24px;
-}
-
-
-
-footer{
-    background-color: rgb(16, 16, 24);
-    padding: 50px 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-}
-
-footer h2{
-    color: rgb(255, 0, 55);
-    font-family: rubik;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-footer p{
-    color: grey;
-    font-family: sans-serif;
-}
-
-
-footer .part img{
-    margin-bottom: 20px;
-}
-footer .part{
-    text-align: center;   
-}
-
-footer .line_bottom{
-    display: inline-block;
-    border-style: solid;
-    border-width: 8px;
-    border-color:transparent transparent  rgb(214, 207, 207) transparent;
-}
-
-footer .part:first-child p{
-    letter-spacing: 2px;
-}
-
-footer .part:nth-child(2) p{
-    text-decoration:underline;
-    
-}
-
-
-
-@media screen and (max-width:780px){
-    .section_3{
-        margin-top: 30px;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .section_3 .part_2{
-        margin-left: 0;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-
-    }
-
-    .section_3 img{
-        max-width: 400px;
-    }
-
-    footer h2{
-        font-size: 1.2em;
-    }
-
-    footer p{
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width:550px){
-    footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 80px;
-    }
-    footer .part:not(:last-child){
-        margin-bottom: 50px;
-    }
-
-    footer h2{
-        font-size: 1.2em;
-    }
-
-    footer p{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width:500px) {
-    .home_link{
-        display: none;
-    }
-    .section_1 h1{
-        font-size: 2rem;
-    }
-    .section_1 p{
-        font-size: 0.9rem;
-    }
-    .section_3{
-        margin-top: 5px;
-    }
-    .section_3 img{
-        display: none;
-    }
-
-    .section_4 {
-        padding-bottom: 150px;
-        margin-bottom: 100px;
-    }
-    .section_4 .zone ul{
-        /* display: block; */
-        flex-wrap: wrap;
-    }
-
-}
-
-
-@media screen and (max-width:350px) {
-    .section_2 .all_services .service{
-        width: 200px;
-    }
-    
-    .section_2 .all_services .service img{
-        width: 100px;
-    }
-    
-    .section_2 .all_services .service:last-child img{
-        width: 150px;
-    }
-}
-
-
-
-
-
-@media screen and (max-width:285px) {
-    .section_1 h1{
-        font-size: 1.2em;
-    }
-    .section_1 p{
-        font-size: 0.8em;
-    }
-    .section_1 .btn-call{
-        font-size: 0.5em;
-    }
-
-    .section_1 .btn-call{
-        font-size: 0.8em;
-    }
-    .section_4 .title_section h2{
-        font-size: 1em;
-    }
-    .section_4 .title_section img{
-        width: 32px;
-    }
-
-    .section_4 .title_section{
-        font-size: 1em;
-    }
-    .section_4 img{
-        width: 10px;
-    }
-    .section_4 .zone{
-        font-size: 0.8em;
-        width: 100px;
-        margin: auto;
-    }
-    .section_4 .title_section h2{
-        font-size: 1.2em;
-    }
-
-    #logo{
-        height: 40px;
-    }
-
-    .section_3 .part_2 a{
-       width: 100px;
-    }
-
-    #services{
-        font-size: 1.5em;
-    }
-
-    .section_2 .all_services .service{
-        width: 150px;
-    }
-    
-    .section_2 .all_services .service img{
-        width: 70px;
-    }
-    
-    .section_2 .all_services .service:last-child img{
-        width: 90px;
-    }
-    
-}
-
-
-
-
-@media screen and (max-width: 200px){
-    footer h2{
-        font-size: 0.8em;
-    }
-
-    footer p{
-        font-size: 0.8em;
-    }
-
-    footer .part:first-child p{
-        font-size: 1em;
-    }
-    .section_1 {
-        padding: 40px 15px;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" href="images/flavicon1.png"> -->
+    <title>SOS REPARATION</title>
+</head>
+<body>
+    <section class="top_header">
+        <a href="https://wa.me/+212676752252">
+            <img src="images/wtssp.png" alt="">
+            <p>06 76 75 22 52</p>
+        </a>
+    </section>
+    <header>
+
+        <a href=""><img id="logo" src="images/logo.png" alt="" srcset=""></a>
+        
+
+
+    </header>
+
+    <section class="section_1">
+        <h1>Réparation  <br>Electroménagers</h1>
+        <p>Il est facile de contacter les spécialistes des réparations en ligne: vous pouvez contacter les experts de notre service, de 09h à 23h par téléphone au Whatssap ou numero telephone</p>
+        <a class="btn-call" href="https://wa.me/+212676752252">06 76 75 22 52</a>
+    </section>
+
+    <section class="section_3">
+        <div class="part_1">
+            <img style="width: 450px;" src="images/cover2.jpg" alt="">
+        </div>
+        <div class="part_2">
+            <h2>Votre appareil a besoin d'un réglage ?</h2>
+            <p>Contactez-nous par numero de telephone
+            Ou par Whatss'App<br>
+            de 9h matin à 23h nuit.</p>
+
+            <a href="#services">Découvrir les services</a>
+        </div>
+    </section>
+
+    <section class="section_2">
+        <h2 id="services">Nos Services</h2>
+        <div class="line_bottom"></div>
+        <!-- <a class="btn-contact" href="tel:212676752252">contactez-nous</a> -->
+        <div class="all_services">
+            <div class="service">
+                <img src="images/machine_a_laver.jpg" alt="">
+                <h3>Machine à laver</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, velit totam? Blanditiis facilis natus non!</p> -->
+            </div>
+
+            <div class="service">
+                <img src="images/climatiseur.jpg" alt="">
+                <h3>Climatiseur</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, velit totam? Blanditiis facilis natus non!</p> -->
+            </div>
+            <div class="service">
+                <img src="images/lave_vaiseselle.jpg" alt="">
+                <h3>Lave-Vaisselle</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, velit totam? Blanditiis facilis natus non!</p> -->
+            </div>
+            <div class="service">
+                <img src="images/refrigerator.jpg" alt="">
+                <h3>Réfrigrateur</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, velit totam? Blanditiis facilis natus non!</p> -->
+            </div>
+            <div class="service">
+                <img src="images/chambre_a_froid.jpg" alt="">
+                <h3>Chambre à froid</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, velit totam? Blanditiis facilis natus non!</p> -->
+            </div>
+            <!-- <div class="service">
+                <img src="images/tools.png" alt="">
+                <h3>Plusieurs ...</h3>
+            </div> -->
+
+        </div>
+
+
+        <section class="section_4">
+            <div class="title_section">
+                <img src="images/location.png" alt="" >
+                <h2>Zone de Travail</h2>
+            </div>
+            <div class="line_bottom"></div>
+
+            <div class="zone">
+                <ul>
+                    <li>
+                        <img src="images/pin.png" alt="">
+                        <span>Salé</span>
+                    </li>
+                    <li>
+                        <img src="images/pin.png" alt="">
+                        <span>Rabat</span>
+                    </li>
+                    <li>
+                        <img src="images/pin.png" alt="">
+                        <span>Temara</span>
+                    </li>
+                    <li>
+                        <img src="images/pin.png" alt="">
+                        <span>Harhoura</span>
+                    </li>
+                    <li>
+                        <img src="images/pin.png" alt="">
+                        <span>Tamesna</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+    </section>
+
+
+
+    <section class="contact_sticky">
+        <a href="tel:+212676752252">
+            <img src="images/call2.png" alt="">
+        </a>
+    </section>
+    <footer>
+        <div class="part">
+            <img src="images/chat.png">
+            <h2>CONTACT</h2>
+            <p>06 76 75 22 52</p>
+        </div>
+        <div class="part">
+            <img src="images/location.png">
+            <h2>ADRESSE</h2>
+            <a href="https://goo.gl/maps/NPquXs8ppP2D3YTK8"><p>Hay Salam , Av. Tayarane, Salé</p></a>
+            <div class="line_bottom"></div>
+        </div>
+        <div class="part">
+            <img src="images/info.png">
+            <h2>A PROPOS DE NOUS</h2>
+            <p>+15 ans experience</p>
+        </div>
+    </footer>
+</body>
+</html>
