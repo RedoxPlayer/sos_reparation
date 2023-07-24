@@ -1,10 +1,10 @@
 @font-face {
     font-family: roboto;
-    src: url(fonts/roboto/Roboto-Light.ttf);
+    src: url(../../fonts/roboto/Roboto-Light.ttf);
 }
 @font-face {
     font-family: rubik;
-    src: url(fonts/rubik/Rubik-VariableFont_wght.ttf);
+    src: url(../../fonts/rubik/Rubik-VariableFont_wght.ttf);
 }
 
 *{
@@ -54,13 +54,6 @@ header a{
     color: black;
 }
 
-.section_1{
-    font-family: roboto;
-    padding: 40px;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.783), rgba(0, 0, 0, 0.747)),url(images/cover.jpg);
-    background-size: cover;
-}
 
 
 .btn-call{
@@ -97,71 +90,9 @@ header a{
 
 
 
-.section_2{
-    font-family: roboto;
-    text-align: center;
-    margin: 30px 0 20px 0;
-    padding: 10px 0;
-}
-.section_2 h2{
-    font-size: 2rem;
-}
-.section_2 .line_bottom{
-    margin-top: 10px;
-    display: inline-block;
-    border-style: solid;
-    border-width: 15px;
-    border-color: rgb(255, 0, 55) transparent transparent transparent;
-}
 
-/* .section_2 .btn-contact{
-    display: inline-block;
-    background-color: rgb(255, 0, 55);
-    margin: 10px 0;
-    padding: 10px;
-    color: white;
 
-} */
 
-.section_2 .all_services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(237, 232, 233);
-    margin-top: 5px;
-    margin-bottom: 100px;
-}
-
-.section_2 h3{
-    font-family: roboto;
-    font-weight: 800;
-}
-.section_2 .all_services .service{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-around;
-    width: 200px;
-    margin: 30px;
-    background-color: white;
-    padding: 20px;
-    width: 250px;
-    min-height: 100px;
-    border-radius: 10px;
-    color: rgb(26, 23, 25);
-    font-family: roboto;
-    font-weight: lighter;
-}
-.section_2 .all_services .service img{
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-.section_2 .all_services .service:last-child img{
-    width: 250px;
-}
 
 
 #more-btn{
@@ -174,52 +105,6 @@ header a{
     font-family: roboto;
     border-radius: 5px;
     font-weight: lighter;
-}
-
-
-
-
-.section_3{
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
-    margin: 20px 50px;
-    justify-content: center;
-    min-height: 340px;
-    font-family: roboto;
-    align-items: center;
-}
-
-.section_3 .part_2{
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.section_3 .part_2 h2{
-    color: rgb(90, 88, 88);
-    font-weight: bolder;
-    font-size: 2em;
-
-}
-.section_3 .part_2 a{
-    display: block;
-    width: 160px;
-    background-color: rgb(255, 0, 55);
-    padding: 10px;
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    /* font-weight: 700; */
-
-}
-
-.section_3 .part_2 p{
-    color: rgb(108, 101, 101);
-    margin-top: 20px;
-    font-size: 1.1em;
-    font-weight: lighter;
-    letter-spacing: 1px;
 }
 
 
@@ -239,7 +124,7 @@ header a{
     padding: 40px 20px 80px 20px;
     position: relative;
     margin: 0 0 50px;
-    background: linear-gradient(rgba(4, 5, 33, 0.961), rgba(4, 5, 33, 0.45)) ,url(images/map_cover.png);
+    background: linear-gradient(rgba(4, 5, 33, 0.961), rgba(4, 5, 33, 0.45)) ,url(../../images/map_cover.png);
     background-position: center;
     background-size: cover;
 }
@@ -249,6 +134,118 @@ header a{
     border-bottom: solid 4px rgb(255, 0, 55);
     width: 40px;
 }
+
+.slide{
+    background: linear-gradient(rgba(0, 0, 0, 0.888), hsla(0, 0%, 0%, 0.537)), url(../../images/cover_refrigerator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.slide h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 4em;
+    color: white;
+    margin-bottom: 30px;
+    font-family: rubik;
+}
+
+.slide .slide-more{
+    background-color: rgb(255, 0, 55);
+    padding: 0.4rem 1.5rem;
+    border-radius: 2rem;
+    margin-top:10px;
+    border: rgb(255, 0, 55) solid 1px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-family: roboto;
+}
+
+.slide .slide-more:hover{
+    border: white solid 1px;
+    background: none;
+    color: white;
+}
+
+.swipe-down{
+    border: 20px solid ;
+    border-color:  transparent transparent white transparent;
+    /* border-radius: 50%; */
+    margin-top: -10px;
+    animation: swipe-down infinite ease-out 0.8s alternate;
+}
+@keyframes swipe-down {
+    to{
+        transform: translateY(10px);
+    }
+}
+
+
+
+.section_2{
+    padding: 30px 35px;
+    background-color: rgb(237, 232, 233);
+}
+
+.section_2 h2{
+    text-align: center;
+    color: rgb(255, 0, 55);
+    font-weight: bold;
+    font-size: 2em;
+    font-family: rubik;
+}
+.service_infos{
+    padding: 40px 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.service_infos .service_picture{
+    width: 700px;
+}
+
+.service_infos .service_picture img{
+    width: 100%;
+}
+
+
+.service_infos div{
+    margin: 10px;
+}
+.service_infos .service_description{
+    font-size: 1.1em;
+    font-family: roboto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section_4 .zone{
     background-color: white;
@@ -365,24 +362,6 @@ footer .part:nth-child(2) p{
 
 
 @media screen and (max-width:780px){
-    .section_3{
-        margin-top: 30px;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .section_3 .part_2{
-        margin-left: 0;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-
-    }
-
-    .section_3 img{
-        max-width: 400px;
-    }
 
     footer h2{
         font-size: 1.2em;
@@ -394,6 +373,10 @@ footer .part:nth-child(2) p{
 }
 
 @media screen and (max-width:550px){
+    .slide h2{
+        font-size: 2.5em;
+    }
+
     footer{
         flex-direction: column;
         justify-content: center;
@@ -411,8 +394,17 @@ footer .part:nth-child(2) p{
     footer p{
         font-size: 1em;
     }
+    .service_infos {
+        flex-wrap: wrap;
+
+    }
+    .service_infos .service_picture{
+        width:300px;
+    }
+
 }
 @media screen and (max-width:500px) {
+
     .home_link{
         display: none;
     }
@@ -422,12 +414,7 @@ footer .part:nth-child(2) p{
     .section_1 p{
         font-size: 0.9rem;
     }
-    .section_3{
-        margin-top: 5px;
-    }
-    .section_3 img{
-        display: none;
-    }
+
 
     .section_4 {
         padding-bottom: 150px;
@@ -441,25 +428,29 @@ footer .part:nth-child(2) p{
 }
 
 
-@media screen and (max-width:350px) {
-    .section_2 .all_services .service{
-        width: 200px;
+
+@media screen and (max-width: 350px){
+    .slide h2{
+        font-size: 2em;
     }
     
-    .section_2 .all_services .service img{
-        width: 100px;
-    }
-    
-    .section_2 .all_services .service:last-child img{
-        width: 150px;
-    }
 }
 
 
 
-
-
 @media screen and (max-width:285px) {
+    .slide h2{
+        font-size: 2.5em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section_2 h2{
+        font-size: 1.4em;
+    }
+    .section_2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .section_1 h1{
         font-size: 1.2em;
     }
@@ -498,26 +489,10 @@ footer .part:nth-child(2) p{
     #logo{
         height: 40px;
     }
-
-    .section_3 .part_2 a{
-       width: 100px;
-    }
-
     #services{
         font-size: 1.5em;
     }
-
-    .section_2 .all_services .service{
-        width: 150px;
-    }
     
-    .section_2 .all_services .service img{
-        width: 70px;
-    }
-    
-    .section_2 .all_services .service:last-child img{
-        width: 90px;
-    }
     
 }
 
@@ -538,5 +513,9 @@ footer .part:nth-child(2) p{
     }
     .section_1 {
         padding: 40px 15px;
+    }
+
+    .slide h2{
+        font-size: 1.7em;
     }
 } 
