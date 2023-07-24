@@ -143,7 +143,7 @@ header a{
     margin: 30px;
     background-color: white;
     padding: 20px;
-    width: 150px;
+    width: 250px;
     min-height: 100px;
     border-radius: 10px;
     color: rgb(26, 23, 25);
@@ -151,10 +151,13 @@ header a{
     font-weight: lighter;
 }
 .section_2 .all_services .service img{
-    /* width: 50px; */
+    width: 200px;
     margin-bottom: 10px;
 }
 
+.section_2 .all_services .service:last-child img{
+    width: 250px;
+}
 
 
 .section_3{
@@ -419,6 +422,24 @@ footer .part:nth-child(2) p{
 }
 
 
+@media screen and (max-width:350px) {
+    .section_2 .all_services .service{
+        width: 200px;
+    }
+    
+    .section_2 .all_services .service img{
+        width: 100px;
+    }
+    
+    .section_2 .all_services .service:last-child img{
+        width: 150px;
+    }
+}
+
+
+
+
+
 @media screen and (max-width:285px) {
     .section_1 h1{
         font-size: 1.2em;
@@ -465,6 +486,18 @@ footer .part:nth-child(2) p{
 
     #services{
         font-size: 1.5em;
+    }
+
+    .section_2 .all_services .service{
+        width: 150px;
+    }
+    
+    .section_2 .all_services .service img{
+        width: 70px;
+    }
+    
+    .section_2 .all_services .service:last-child img{
+        width: 90px;
     }
     
 }
