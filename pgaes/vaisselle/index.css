@@ -89,7 +89,39 @@ header a{
 }
 
 
+.home-btn{
+    color: rgb(255, 0, 55);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    font-family: rubik;
+    font-weight: 400;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
 
+.home-btn .icon img{
+    width: 100%;
+}
+
+.home-btn .icon{
+    width: 24px;
+    margin-right: 5px;
+}
+.home-btn:active{
+    border-bottom: 2px solid rgb(255, 0, 55);
+}
+.home-btn:hover{
+    color: rgb(100, 16, 34);
+    transform: scale(1.1);
+}
+
+.home-btn .home .text{
+    width: 100%;
+}
 
 
 
@@ -415,6 +447,12 @@ footer .part:nth-child(2) p{
         font-size: 0.9rem;
     }
 
+    .home-btn .home{
+        display: none;
+    }
+    .home-btn .icon{
+        width: 32px;
+    }
 
     .section_4 {
         padding-bottom: 150px;
@@ -435,7 +473,6 @@ footer .part:nth-child(2) p{
     }
     
 }
-
 
 
 @media screen and (max-width:285px) {
@@ -461,6 +498,12 @@ footer .part:nth-child(2) p{
         font-size: 0.5em;
     }
 
+    .home-btn .home{
+        display: none;
+    }
+    .home-btn .icon{
+        width: 20px;
+    }
     .section_1 .btn-call{
         font-size: 0.8em;
     }
@@ -489,6 +532,7 @@ footer .part:nth-child(2) p{
     #logo{
         height: 40px;
     }
+
     #services{
         font-size: 1.5em;
     }
